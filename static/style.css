@@ -1,0 +1,12 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#matches .match {
+  border-bottom: 1px solid #444;
+  padding: 1rem 0;
+}
+
+.list-group-item h5 {
+  margin-bottom: 0.5rem;
+}
