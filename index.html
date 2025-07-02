@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Live Score - Real-time Updates</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-cricket"></i>
+                <h1>CricketLive</h1>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#live" class="active">Live Scores</a></li>
+                    <li><a href="#fixtures">Fixtures</a></li>
+                    <li><a href="#results">Results</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <h2>Live Cricket Scores</h2>
+                <p>Real-time updates from matches around the world</p>
+                <div class="live-indicator">
+                    <span class="pulse"></span>
+                    <span>LIVE</span>
+                </div>
+            </section>
+
+            <section class="matches-section">
+                <div class="section-header">
+                    <h3>Current Matches</h3>
+                    <div class="refresh-btn" onclick="refreshScores()">
+                        <i class="fas fa-sync-alt"></i>
+                        Refresh
+                    </div>
+                </div>
+                
+                <div class="matches-grid" id="matchesGrid">
+                    <!-- Matches will be dynamically loaded here -->
+                </div>
+            </section>
+
+            <section class="upcoming-section">
+                <h3>Upcoming Matches</h3>
+                <div class="upcoming-matches" id="upcomingMatches">
+                    <!-- Upcoming matches will be loaded here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CricketLive. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Match Detail Modal -->
+    <div class="modal" id="matchModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="modal-body" id="modalBody">
+                <!-- Match details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
