@@ -1,0 +1,9 @@
+{
+  "api_key": "your_flux_api_key_here",
+  "base_url": "https://api.flux.ai/v1",
+  "max_concurrent": 5,
+  "output_dir": "generated_images",
+  "save_metadata": true,
+  "retry_attempts": 3,
+  "retry_delay": 2.0
+}
