@@ -1,0 +1,17 @@
+[
+  {
+    "prompt": "A futuristic cityscape at sunset with flying cars",
+    "size": "1024x1024",
+    "style": "dynamic"
+  },
+  {
+    "prompt": "A serene mountain landscape with a crystal clear lake",
+    "size": "1024x1024",
+    "style": "creative"
+  },
+  {
+    "prompt": "A portrait of a wise old wizard with a long beard",
+    "size": "1024x1024",
+    "style": "portrait"
+  }
+]
